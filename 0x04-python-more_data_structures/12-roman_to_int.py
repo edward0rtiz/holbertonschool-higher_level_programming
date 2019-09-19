@@ -18,7 +18,8 @@ def roman_to_int(roman_string):
         if roman_d.get(roman_string[i], 0) == 0:
             return (0)
 
-        if (i != (len(roman_string) - 1) and roman_d[roman_string[i]] < roman_d[roman_string[i + 1]]):
+        if (i != (len(roman_string) - 1) and
+            roman_d[roman_string[i]] < roman_d[roman_string[i + 1]]):
             number += roman_d[roman_string[i]] * -1
         else:
             number += roman_d[roman_string[i]]

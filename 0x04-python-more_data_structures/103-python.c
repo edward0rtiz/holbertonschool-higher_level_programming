@@ -43,7 +43,7 @@ void print_python_list(PyObject *p)
 
 void print_python_bytes(PyObject *p)
 {
-	PyBytesObject *bt = (PyBytesObject *)p;
+	PyBytesObject *bytes = (PyBytesObject *)p;
 	unsigned char size;
 	unsigned char c;
 
@@ -65,7 +65,7 @@ void print_python_bytes(PyObject *p)
 	printf(" first %d bytes: ", size);
 	for (c = 0; c < size; c++)
 	{
-		printf("%02hhx", bt->ob_sval[c]);
+		printf("%02hhx", bytes->ob_sval[c]);
 		if (c == (size - 1))
 			printf("\n");
 		else

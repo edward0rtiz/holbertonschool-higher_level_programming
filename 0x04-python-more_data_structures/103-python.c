@@ -53,6 +53,7 @@ void print_python_bytes(PyObject *p)
 		printf(" [ERROR] Invalid Bytes Object\n");
 		return;
 	}
+
 	printf(" size: %ld\n", ((PyVarObject *)p)->ob_size);
 	printf(" trying string: %s\n", bt->ob_sval);
 
@@ -60,6 +61,7 @@ void print_python_bytes(PyObject *p)
 		size = 10;
 	else
 		size = ((PyVarObject *)p)->ob_size + 1;
+
 	printf(" first %d bytes: ", size);
 	for (c = 0; c < size; c++)
 	{

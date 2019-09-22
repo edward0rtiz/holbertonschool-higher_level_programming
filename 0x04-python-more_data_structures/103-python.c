@@ -13,7 +13,7 @@ void print_python_bytes(PyObject *p);
 
 void print_python_list(PyObject *p)
 {
-	int size, b, alloc;
+	long int size, b, alloc;
 	PyVarObject *var = (PyVarObject *)p;
 	PyListObject *list = (PyListObject *)p;
 	const char *type;
@@ -42,7 +42,7 @@ void print_python_list(PyObject *p)
 void print_python_bytes(PyObject *p)
 {
 	PyBytesObject *bytes = (PyBytesObject *)p;
-	unsigned char size, c;
+	long int size, c;
 
 	printf("[.] bytes object info\n");
 	if (strcmp(p->ob_type->tp_name, "bytes") != 0)

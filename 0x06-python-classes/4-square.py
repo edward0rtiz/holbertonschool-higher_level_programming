@@ -1,11 +1,6 @@
 #!/usr/bin/python3
 class Square:
-    """Type class square"""
     def __init__(self, size):
-        """Init the square class
-        Args:
-        param1: size is the type int attribute to make it private
-        """
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
         elif size < 0:
@@ -15,7 +10,6 @@ class Square:
 
     @property
     def size(self):
-        """private attribute to get the size of a square"""
         return (self.__size)
 
     @size.setter

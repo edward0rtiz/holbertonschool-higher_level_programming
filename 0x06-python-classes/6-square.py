@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 class Square:
-    def __init__(self, size =0, position=(0, 0)):
+    """type class square"""
+    def __init__(self, size=0, position=(0, 0)):
         """Init the square class
         Args:
         param1: size is the type int attribute to make it private
@@ -25,7 +26,7 @@ class Square:
 
     @property
     def position(self):
-        "private ttribute to get the postion of the square"
+        """private tribute to get the postion of the square"""
         return (self.__position)
 
     @position.setter

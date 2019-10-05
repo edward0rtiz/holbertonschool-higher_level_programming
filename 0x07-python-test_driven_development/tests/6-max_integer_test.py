@@ -43,6 +43,11 @@ class TestMaxInteger(unittest.TestCase):
         max_first = [4, 1, 2, 3]
         self.assertEqual(max_integer(max_first), 4)
 
+    def test_max_middle(self):
+
+        max_middle = [1, 2, 4, 3]
+        self.assertEqual(max_integer(max_middle), 4)
+
     def test_non_string(self):
 
         self.assertEqual(max_integer(""), None)

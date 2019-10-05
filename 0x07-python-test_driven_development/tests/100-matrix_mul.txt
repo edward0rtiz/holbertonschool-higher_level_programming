@@ -173,6 +173,21 @@ ValueError when m_b is an empty list
     Traceback (most recent call last):
     ValueError: m_b can't be empty
 
-TypeError empty values in m_b matrix
+ValueError m_a and m_b cannot be multiplied
+
+::
+
+    >>> m_a = [
+    ... [3, 4],
+    ... [5, 6],
+    ... ]
+    >>> m_b = [
+    ... [3, 4],
+    ... [5, 6],
+    ... [7, 8]
+    ... ]
+    >>> print(matrix_mul(m_a, m_b))
+    Traceback (most recent call last):
+    ValueError: m_a and m_b can't be multiplied
 
 ::

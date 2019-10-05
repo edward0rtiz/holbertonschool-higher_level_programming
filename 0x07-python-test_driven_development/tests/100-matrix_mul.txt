@@ -125,4 +125,54 @@ TypeError adding other type rather than int or float into the list
     Traceback (most recent call last):
     TypeError: m_a should contain only integers or floats
 
+TypeError when the matrix a doesn't hve the same size
+
+::
+
+    >>> m_a = [
+    ... [5, 6, 10],
+    ... [7, 8]
+    ... ]
+    >>> m_b = [
+    ... [5, 6],
+    ... [7, 8]
+    ... ]
+    >>> print(matrix_mul(m_a, m_b))
+    Traceback (most recent call last):
+    TypeError: each row of m_a must should be of the same size
+
+TypeError when the matrix b doesn't hve the same size
+
+::
+
+    >>> m_a = [
+    ... [5, 6],
+    ... [7, 8]
+    ... ]
+    >>> m_b = [
+    ... [5, 6, 1],
+    ... [7, 8]
+    ... ]
+    >>> print(matrix_mul(m_a, m_b))
+    Traceback (most recent call last):
+    TypeError: each row of m_b must should be of the same size
+
+TypeError when m_b is not a list inside a list
+
+::
+
+    >>> print(matrix_mul([[5, 6]], [7, 8]))
+    Traceback (most recent call last):
+    TypeError: m_b must be a list of lists
+
+ValueError when m_b is an empty list
+
+::
+
+    >>> print(matrix_mul([[5, 6]], [[]]))
+    Traceback (most recent call last):
+    ValueError: m_b can't be empty
+
+TypeError empty values in m_b matrix
+
 ::

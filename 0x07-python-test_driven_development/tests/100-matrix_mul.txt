@@ -78,6 +78,14 @@ TypeError empty values in m_b matrix
     Traceback (most recent call last):
     ValueError: m_a can't be empty
 
+TypeError m_b is not a list
+
+::
+
+    >>> print(matrix_mul([], [[]]))
+    Traceback (most recent call last):
+    ValueError: m_a can't be empty
+
 TypeError m_a is not a list
 
 ::
@@ -218,3 +226,5 @@ TypeError m_b doesn't contain a list
     >>> print(matrix_mul([[1, "string"]], [[3, 4]]))
     Traceback (most recent call last):
     TypeError: m_a should contain only integers or floats
+
+::

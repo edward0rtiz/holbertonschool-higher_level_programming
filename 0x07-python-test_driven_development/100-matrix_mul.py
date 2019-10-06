@@ -26,10 +26,10 @@ def matrix_mul(m_a, m_b):
     if m_b == [] or m_b == [[]]:
         raise ValueError("m_b can't be empty")
 
-    if not all((isinstance(element, int) or isinstance(element, float))
+    if not all((isinstance(element, (int, float)))
                for element in [number for row in m_a for number in row]):
         raise TypeError("m_a should contain only integers or floats")
-    if not all((isinstance(element, int) or isinstance(element, float))
+    if not all((isinstance(element, (int, float)))
                for element in [number for row in m_b for number in row]):
         raise TypeError("m_b should contain only integers or floats")
 

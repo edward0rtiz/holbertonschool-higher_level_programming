@@ -228,3 +228,15 @@ TypeError m_b doesn't contain a list
     TypeError: m_a should contain only integers or floats
 
 ::
+
+    >>> print(matrix_mul([1, 2], [[3, 4]]))
+    Traceback (most recent call last):
+    TypeError: m_a must be a list of lists
+
+::
+
+    >>> print(matrix_mul([[1, 2]], [3, 4]))
+    Traceback (most recent call last):
+    TypeError: m_b must be a list of lists
+
+::

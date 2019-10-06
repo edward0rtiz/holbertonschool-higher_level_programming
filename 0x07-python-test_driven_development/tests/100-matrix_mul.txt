@@ -190,4 +190,14 @@ ValueError m_a and m_b cannot be multiplied
     Traceback (most recent call last):
     ValueError: m_a and m_b can't be multiplied
 
+TypeError non passing two argumments
+
+::
+
+    >>> print(matrix_mul()) # doctest: +NORMALIZE_WHITESPACE
+    Traceback (most recent call last):
+    TypeError: matrix_mul() missing 2 required positional arguments: 
+    'm_a' and 'm_b'
+
+
 ::

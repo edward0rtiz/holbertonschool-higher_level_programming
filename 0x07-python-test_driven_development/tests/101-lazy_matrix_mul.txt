@@ -1,8 +1,8 @@
 ======================
-101-lazy_matrix
+101-lazy_matrix_mul
 ======================
 
-Matrix multiplication  module is the unit test that verifies matrix mul
+Lazy Matrix multiplication  module is the unit test that verifies matrix mul function created using numpy
 
 =====================
 
@@ -28,27 +28,20 @@ Matrix multiplication  module is the unit test that verifies matrix mul
 
 
     >>> lazy_matrix_mul((1, 2), [1, 2])
-    Traceback (most recent call last):
-    TypeError: m_a must be a list
+    5
 
 ::
 
 
     >>> lazy_matrix_mul([1, 2], (1, 2))
-    Traceback (most recent call last):
-    TypeError: m_b must be a list
+    5
 
 ::
 
 
     >>> lazy_matrix_mul([[1, 4], (1, 2)], [[1, 2], [4, 5]])
-    Traceback (most recent call last):
-    ...
-    TypeError: m_a must be a list of lists
-    lazy_matrix_mul([[1, 2], [5, 7]],[(1, 2, 3), [3, 4]])
-    Traceback (most recent call last):
-    ...
-    TypeError: m_b must be a list of lists
+    array([[17, 22],
+       	   [ 9, 12]])
 
 ::
 

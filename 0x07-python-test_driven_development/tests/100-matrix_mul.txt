@@ -199,5 +199,12 @@ TypeError non passing two argumments
     TypeError: matrix_mul() missing 2 required positional arguments: 
     'm_a' and 'm_b'
 
+Typeerror m_b doesn't contain a list
+
+::
+
+    >>> print(matrix_mul([[1, 2]], [[{"ed": 1}, 2.2]]))
+    Traceback (most recent call last):
+    TypeError: m_b should contain only integers or floats
 
 ::

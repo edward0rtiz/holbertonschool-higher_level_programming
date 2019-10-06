@@ -214,3 +214,7 @@ TypeError m_b doesn't contain a list
     TypeError: matrix_mul() missing 2 required positional arguments: 'm_a' and 'm_b'
 
 ::
+
+    >>> print(matrix_mul([[1, "string"]], [[3, 4]]))
+    Traceback (most recent call last):
+    TypeError: m_a should contain only integers or floats

@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+
 class Student:
     """Type class of a student"""
 

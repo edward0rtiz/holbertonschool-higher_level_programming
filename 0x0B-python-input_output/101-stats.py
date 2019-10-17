@@ -1,10 +1,9 @@
 #!/usr/bin/python3
 
-
-import sys
-
-
 if __name__ == "__main__":
+
+    import sys
+
     size = 0
     statuscd = {}
 
@@ -18,8 +17,15 @@ if __name__ == "__main__":
                 if statuscd.get(line[7], -1) == -1:
                     statuscd[line[7]] = 1
                 else:
-                statuscd[line[7]] += 1
+                    statuscd[line[7]] += 1
+
+                if counter == 10:
+                    break
+                counter += 1
 
         except KeyboardInterrupt:
             exit()
         finally:
+            print("File size: {}".format(size))
+            for key in sorted(statuscd):
+                print("{}: {}".format(key, statuscd[key]))

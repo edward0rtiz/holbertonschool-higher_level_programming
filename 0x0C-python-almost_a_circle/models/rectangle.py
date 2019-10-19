@@ -62,4 +62,10 @@ class Rectangle(Base):
 
     def area(self):
         return self.width * self.height
-    
+
+    def display(self):
+        [print("") for y in range(self.y)]
+        for j in range(self.height):
+            [print(" ", end="") for x in range(self.x)]
+            [print("#", end="") for k in range(self.width)]
+            print("")

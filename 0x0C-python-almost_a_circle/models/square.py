@@ -20,6 +20,7 @@ class Square(Rectangle):
 
     def update(self, *args, **kwargs):
         if args and len(args) != 0:
+            i = 0
             for arg in args:
                 if i == 0:
                     if arg is None:

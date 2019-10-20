@@ -48,7 +48,11 @@ class Square(Rectangle):
                     self.x = k
                 elif j == "y":
                     self.y = k
-                    
+
     def __str__(self):
         return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y,
                                                  self.width)
+    def to_dictionary(self):
+        return {
+            "id": self.id, "size": self.width, "x": self.x, "y": self.y
+        }

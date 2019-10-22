@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""Module of Square"""
+
 
 from models.rectangle import Rectangle
 

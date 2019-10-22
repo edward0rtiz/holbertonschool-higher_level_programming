@@ -9,19 +9,26 @@ class Square(Rectangle):
     """Type class square that inherits from Rectangle"""
 
     def __init__(self, size, x=0, y=0, id=None):
+        """init function"""
 
         super().__init__(size, size, x, y, id)
 
     @property
     def size(self):
+        """width function public"""
+
         return self.width
 
     @size.setter
     def size(self, value):
+        """size function for setter"""
+
         self.width = value
         self.height = value
 
     def update(self, *args, **kwargs):
+        """update function"""
+
         if args and len(args) != 0:
             i = 0
             for arg in args:
@@ -53,10 +60,14 @@ class Square(Rectangle):
                     self.y = k
 
     def __str__(self):
+        """str function"""
+
         return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y,
                                                  self.width)
 
     def to_dictionary(self):
+        """to_dictionary function"""
+        
         return {
             "id": self.id, "size": self.width, "x": self.x, "y": self.y
         }

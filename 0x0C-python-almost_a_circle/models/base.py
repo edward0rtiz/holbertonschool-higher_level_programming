@@ -33,8 +33,8 @@ class Base:
             if list_objs is None:
                 f.write("")
             else:
-                list_dictionaries = [o.to_dictionary() for o in list_objs]
-                f.write(Base.to_json_string(list_dictionaries))
+                list_dicts = [o.to_dictionary() for o in list_objs]
+                f.write(Base.to_json_string(list_dicts))
 
     @staticmethod
     def from_json_string(json_string):

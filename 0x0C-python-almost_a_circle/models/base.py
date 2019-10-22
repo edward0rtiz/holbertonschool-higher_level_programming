@@ -54,9 +54,9 @@ class Base:
     @classmethod
     def load_from_file(cls):
 
-        filename = str(cls.__name__) + '.json'
+        filename = str(cls.__name__) + ".json"
         try:
-            with open(filename, 'r') as f:
+            with open(filename, "r") as f:
                 list_dictionaries = Base.from_json_string(f.read())
                 return [cls.create(**dicti) for dicti in list_dictionaries]
         except IOError:
@@ -65,15 +65,15 @@ class Base:
     @classmethod
     def save_to_file_csv(cls, list_objs):
 
-        filename = cls.__name__ + '.csv'
-        with open(filename, 'w', newline='') as csvfile:
+        filename = cls.__name__ + ".csv"
+        with open(filename, "w", newline="") as csvfile:
             if list_objs is None:
                 f.write("")
             else:
-                if cls.__name__ == 'Rectangle':
-                    fieldnames = ['id', 'width', 'height', 'x', 'y']
+                if cls.__name__ == "Rectangle":
+                    fieldnames = ["id", "width", "height", "x", "y"]
                 else:
-                    fieldnames = ['id', 'size', 'x', 'y']
+                    fieldnames = ["id", "size", "x", "y"]
                 writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
                 for obj in list_objs:
                     writer.writerow(obj.to_dictionary())
@@ -81,13 +81,13 @@ class Base:
     @classmethod
     def load_from_file_csv(cls):
 
-        filename = cls.__name__ + '.csv'
+        filename = cls.__name__ + ".csv"
         try:
-            with open(filename, 'r', newline='') as csvfile:
-                if cls.__name__ == 'Rectangle':
-                    fieldnames = ['id', 'width', 'height', 'x', 'y']
+            with open(filename, "r", newline="") as csvfile:
+                if cls.__name__ == "Rectangle":
+                    fieldnames = ["id", "width", "height", "x", "y"]
                 else:
-                    fieldnames = ['id', 'size', 'x', 'y']
+                    fieldnames = ["id", "size", "x", "y"]
                 list_dictionaries = csv.DictReader(csvfile,
                                                    fieldnames=fieldnames)
                 list_dictionaries = [dict([i, int(j)]for i, j in dicti.items())

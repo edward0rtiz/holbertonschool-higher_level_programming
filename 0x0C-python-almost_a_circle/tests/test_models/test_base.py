@@ -185,7 +185,7 @@ class Testbase_save_file(unittest.TestCase):
     def test_save_file_none(self):
         Rectangle.save_to_file(None)
         with open("Rectangle.json", "r") as f:
-            self.assertNotEqual('[]', f.read())
+            self.assertEqual("[]", f.read())
 
     def test_save_file_empty(self):
         Square.save_to_file([])

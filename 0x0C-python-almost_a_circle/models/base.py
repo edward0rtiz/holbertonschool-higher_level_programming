@@ -6,11 +6,12 @@ import csv
 
 
 class Base:
-    """Type class of a base model"""
+    """Type class for base"""
 
     __nb_objects = 0
 
     def __init__(self, id=None):
+    """__init function"""
 
         if id is not None:
             self.id = id
@@ -20,12 +21,16 @@ class Base:
 
     @staticmethod
     def to_json_string(list_dictionaries):
+        """to_json_string function"""
+
         if list_dictionaries is None or len(list_dictionaries) == 0:
             return '[]'
         return json.dumps(list_dictionaries)
 
     @classmethod
     def save_to_file(cls, list_objs):
+        """save_to_file function"""
+
         filename = cls.__name__ + '.json'
         with open(filename, 'w') as f:
             if list_objs is None:
@@ -36,6 +41,8 @@ class Base:
 
     @staticmethod
     def from_json_string(json_string):
+        """from_json_string function"""
+
         if json_string is None or json_string == '[]':
             return []
         else:
@@ -43,12 +50,16 @@ class Base:
 
     @classmethod
     def create(cls, **dictionary):
+        """create function"""
+
         new_instance = cls(5, 5)
         new_instance.update(**dictionary)
         return new_instance
 
     @classmethod
     def load_from_file(cls):
+        """load_from_file function"""
+
         filename = str(cls.__name__) + '.json'
         try:
             with open(filename, 'r') as f:
@@ -59,6 +70,8 @@ class Base:
 
     @classmethod
     def save_to_file_csv(cls, list_objs):
+        """save_to_file_csv function"""
+
         filename = cls.__name__ + '.csv'
         with open(filename, 'w', newline='') as csvfile:
             if list_objs is None:
@@ -74,6 +87,8 @@ class Base:
 
     @classmethod
     def load_from_file_csv(cls):
+        """load_from_file_csv"""
+
         filename = cls.__name__ + '.csv'
         try:
             with open(filename, 'r', newline='') as csvfile:

@@ -127,9 +127,9 @@ class Base:
             turt.goto(square.x, square.y)
             turt.down()
             for i in range(2):
-                turt.forward(rectangle.width)
+                turt.forward(square.width)
                 turt.left(90)
-                turt.forward(rectangle.height)
+                turt.forward(square.height)
                 turt.left(90)
             turt.hideturtle()
 

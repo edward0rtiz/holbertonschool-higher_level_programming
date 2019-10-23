@@ -99,6 +99,7 @@ class Base:
         except IOError:
             return []
 
+    @staticmethod
     def draw(list_rectangles, list_squares):
 
         turt = turtle.Turtle()

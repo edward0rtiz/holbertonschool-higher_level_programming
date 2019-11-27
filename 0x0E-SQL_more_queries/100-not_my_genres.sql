@@ -1,4 +1,4 @@
---Query to list genres not linked to Dexter show
+-- Query to list genres not linked to Dexter show
 SELECT DISTINCT name
   FROM tv_genres AS genres
 	 INNER JOIN tv_show_genres AS show_genres

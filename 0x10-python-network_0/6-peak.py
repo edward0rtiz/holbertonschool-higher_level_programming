@@ -7,9 +7,9 @@ def find_peak(list_of_integers):
     if loi == []:
         return None
     total = len(loi)
-    if total == 0:
+    if total == 1:
         return loi[0]
-    elif total == 1:
+    elif total == 2:
         return max(loi)
     middle = int(total / 2)
     peak = loi[middle]

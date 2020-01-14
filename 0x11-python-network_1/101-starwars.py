@@ -16,7 +16,7 @@ if __name__ == '__main__':
     while page < count:
         for r in result.get('results'):
             print(r.get('name'))
-            page +=1
+            page += 1
         next_page = result.get('next')
         if next_page is not None:
             results = requests.get(next_page).json()

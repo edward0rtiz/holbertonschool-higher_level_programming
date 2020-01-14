@@ -18,7 +18,7 @@ if __name__ == '__main__':
             print(r.get('name'))
             for i in r.get('films'):
                 film = requests.get(i).json()
-                print('\t{}'.format(film.get('title')))
+                print("\t{}".format(film.get('title')))
             page += 1
         next_page = result.get('next')
         if next_page is not None:

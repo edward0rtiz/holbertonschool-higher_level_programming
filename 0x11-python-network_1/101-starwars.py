@@ -9,7 +9,7 @@ if __name__ == '__main__':
     url = 'https://swapi.co/api/people'
     params = {'search': sys.argv[1]}
     result = requests.get(url, params=params).json()
-    count = result.get("count")
+    count = result.get('count')
     print("Number of results: {}".format(count))
 
     page = 0

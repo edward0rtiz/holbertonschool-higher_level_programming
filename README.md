@@ -1,4 +1,4 @@
-# Holbertonschool-higher_level_programming :floppy_disk:
+# Holbertonschool-higher_level_programming :snake:
 
 [![C|C](https://img.shields.io/badge/Python-674%20commits-blue.svg)](https://sourcerer.io/edward0rtiz)
 

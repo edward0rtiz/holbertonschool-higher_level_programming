@@ -1,5 +1,6 @@
 # Holbertonschool-higher_level_programming :snake:
 
+[![C|C](https://img.shields.io/badge/Python-80.6%25-blue.svg)](https://sourcerer.io/edward0rtiz) [![C|C](https://img.shields.io/badge/JS-6.9%25-yellowgreen.svg)](https://sourcerer.io/edward0rtiz) [![C|C](https://img.shields.io/badge/C-5.7%25-orange.svg)](https://sourcerer.io/edward0rtiz) [![C|C](https://img.shields.io/badge/HTML-3.5%25-yellow.svg)](https://sourcerer.io/edward0rtiz) [![C|C](https://img.shields.io/badge/SQL-2.6%25-lightgrey.svg)](https://sourcerer.io/edward0rtiz) [![C|C](https://img.shields.io/badge/Shell-0.7%25-green.svg)](https://sourcerer.io/edward0rtiz)
 
 > High level programming projects based in Python language
 

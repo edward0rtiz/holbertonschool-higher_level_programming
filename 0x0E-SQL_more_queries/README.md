@@ -1,4 +1,4 @@
-# 0x0D SQL - Introduction :snake:
+# 0x0E SQL - More queries :snake:
 
 > SQL is a domain-specific language used in programming and designed for managing data held in a relational database management system, or for stream processing in a relational data stream management system. This project covers the part 2 of SQL. The purpose of these SQL projects is to gain skills to manipulate SQL along Python to enhance the data engineering
 
@@ -57,7 +57,7 @@ At the end of this project, I was able to solve these questions:
 ### Try It On Your Machine :computer:	
 ```bash
 git clone https://github.com/edward0rtiz/holbertonschool-higher_level_programming.git
-cd 0x0D-SQL_introduction
+cd 0x0E-SQL_more_queries
 CONNECT TO A SQL SERVER (ONCE INSTALLED)
 mysql -hlocalhost -uroot -p
 TEST SCRIPT
